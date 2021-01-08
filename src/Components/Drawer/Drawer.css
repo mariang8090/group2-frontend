@@ -1,0 +1,80 @@
+/*The drawer*/
+.drawer{
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    background-color: #696969;
+    border: none;
+    width:40%;
+    height:100%;
+    top: 0;
+    right: 0;
+    z-index:200;
+    transform:translateX(100%);
+    transition: transform 150ms ease-out;
+}
+
+.drawer.open{
+    transform:translateX(0);
+}
+
+/*Top section of drawer*/
+.drawer-top{
+    display:flex;
+    flex-direction:row;
+    box-sizing:border-box;
+    background-color:#555454;
+    padding-left:1rem;
+    align-items: center;
+    width:100%;
+    height:7.5%;
+    border-bottom-style: solid;
+    border-color:#333;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.322);
+}
+
+.drawer-top-button{
+    width:30px;
+    height:30px;
+    background-color: transparent;
+    border:none;
+    font-size:1.2rem;
+    color:#2e2e2e;
+}
+
+.drawer-top-button:focus{
+    outline:none;
+}
+.drawer-top-button:hover{
+    color:white;
+    background-color:#696969
+}
+
+.drawer-top-title{
+    padding-left:0.5rem;
+    font-size:1.5rem;
+    font-family:'Segoe UI';
+    color:#2e2e2e;
+}
+
+/*Bottom section of Drawer*/
+.drawer-options ul{
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.drawer-options li{
+    text-align:center;
+    margin-bottom: 10px;
+    width:80%;
+}
+
+.drawer-options li:hover{
+    background-color:#555454;
+}
+.drawer-options a{
+    text-decoration:none;
+    font-family:'Segoe UI';
+    color: white;
+    font-size:1.25rem;
+}
